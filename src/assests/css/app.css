@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mainBody {
+  background-color: #0d1148;
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.subMainBody {
+  margin-top: 1vh;
+  margin-right: 1vh;
+  background-color: #dde1e8;
+  width: 83.5vw;
+  height: 98vh;
+  border-radius: 1.5em;
+  float: right;
+}
+.subMainBody-div {
+  display: flex;
+  justify-content: space-between;
+}
+.subMainBody-header-div {
+  display: flex;
+  margin-right: 2em;
+  margin-top: 0.3em;
+}
+.subMainBody-header {
+  margin-left: 1.5em;
+  margin-top: 0.6em;
+}
+.subMainBody-header h3 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 0.95em;
+}
+.subHeader {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.95em;
+}
+.subHeader-icon {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  font-size: "small";
+}
+.componentRootDiv {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.componentRootSubDiv {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+.apexCharMainDiv {
+  margin-top: 1em;
+  border-radius: 1em;
+  width: 80vw;
+  height: 34vh;
+  background-color: white;
+}
+.apexChartSubDiv {
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+.apexChartHeadingDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-h3 {
+  margin-top: 0em;
+  padding-left: 0.5em;
+  font-size: 0.9em;
+}
+.apexChartHeadingSubDiv {
+  display: flex;
+}
+.menuItemInputLabel {
+  font-size: 0.8em;
+}
+.menuItemSelect {
+  height: 1.5em;
+  width: 12em;
+}
+
+.header-icon-div {
+  padding-right: 0.5em;
+  padding-left: 1em;
+}
+.header-icon {
+  font-size: 0.5em;
+  cursor: pointer;
+}
+/* spining animation css */
+.header-icon:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*end of  spining animation css */

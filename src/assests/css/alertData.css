@@ -1,0 +1,77 @@
+.alertDataMainDiv {
+  margin-top: 1em;
+  border-radius: 1em;
+  width: 56vw;
+  height: 50vh;
+  background-color: white;
+  margin-bottom: 1em;
+}
+.alertDataMainSubDiv {
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
+.alertDataButtonDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.alertDataButtonSubDiv1 {
+  display: flex;
+  padding-left: 0.5em;
+}
+#alertDataButton1 {
+  font-size: 0.6em;
+  background-color: #0d1148;
+  border-radius: 0.6em;
+  width: 12em;
+}
+#alertDataButton2 {
+  font-size: 0.6em;
+  margin-left: 1.5em;
+  border-radius: 0.6em;
+}
+.alertDataButtonSubDiv2 {
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+/* spining animation css */
+.refreshIcon:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*end of  spining animation css */
+
+.alertDataTable {
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.alertDataPaginationMainDiv {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  bottom: 0em;
+  flex-grow: 1;
+}
+/* #test159:hover:first-child{
+    background-color:#0D1148
+} */

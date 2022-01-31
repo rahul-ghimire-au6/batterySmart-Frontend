@@ -1,0 +1,178 @@
+*:focus {
+  outline: 0 !important;
+}
+.register_container {
+  border: 1px solid white;
+  width: 85em;
+  height: 40em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.2);
+  display: flex;
+}
+.register_img {
+  width: 40em;
+  height: 34.8em;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+}
+.name_register {
+  margin-top: 0em !important;
+  font-size: 1.5em;
+  text-align: center;
+  width: 10em;
+  /* start */
+  padding: 0.1rem 0;
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+  background: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+  /* end */
+}
+.email_register {
+  margin-top: 0.2em !important;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.5em;
+  width: 10em;
+  /* start */
+  padding: 0.1rem 0;
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+  background: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+  /* end */
+}
+.password_register {
+  margin-top: 0.2em !important;
+  text-align: center;
+  margin-top: 0.5em;
+  width: 10em;
+  /* start */
+  padding: 0.1rem 0;
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+  background: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+  /* end */
+}
+.button_register {
+  width: 7em;
+  font-size: 1.1em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.name_register:focus {
+  opacity: 1;
+  transform: translate(-10%, -10%);
+  pointer-events: auto;
+  transition: all 0.4s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.5s;
+  border-bottom: 2px solid #0156ed;
+  z-index: 10;
+  background-color: white;
+}
+.email_register:focus {
+  overflow-x: visible;
+  opacity: 1;
+  transform: translate(-10%, -10%);
+  pointer-events: auto;
+  transition: all 0.4s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.5s;
+  z-index: 10;
+  border-bottom: 2px solid #0156ed;
+  background-color: white;
+}
+.password_register:focus {
+  opacity: 1;
+  transform: translate(-10%, -10%);
+  pointer-events: auto;
+  transition: all 0.4s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.5s;
+  z-index: 10;
+  border-bottom: 2px solid #0156ed;
+  background-color: white;
+}
+/* logo */
+.mini_logo_container {
+  display: flex;
+  margin-left: 19.5em;
+}
+.facebook_logo {
+  border: 1px solid black;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1);
+}
+.google_logo {
+  border: 1px solid black;
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1);
+}
+.linkedin_logo {
+  border: 1px solid black;
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1);
+}
+.facebook_logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1s;
+}
+.google_logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1s;
+}
+.linkedin_logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1s;
+}
+/* end */
+/* error */
+.err {
+  font-size: 1em;
+  color: red;
+  display: block;
+  margin-bottom: 0em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+.noerr {
+  font-size: 0.8em;
+  color: red;
+  display: none;
+}
+/* end */
+.maroon5 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+#error {
+  color: red;
+  font-size: 0.9em;
+}

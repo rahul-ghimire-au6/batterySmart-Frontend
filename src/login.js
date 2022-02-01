@@ -10,6 +10,8 @@ import LoginIcon from '@mui/icons-material/Login';
 import Button from '@mui/material/Button';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
+import backendUrl from './constants/constants.js';
+
 
 const MySwal = withReactContent(Swal);
 const Toast = MySwal.mixin({
@@ -33,7 +35,7 @@ export default function Login (props) {
       email:values.email,
       password:values.password
     };
-    const url = "http://localhost:8080/user/login";
+    const url = `${backendUrl}/user/login`;
     fetch(url, {
       method: "POST",
       headers: {

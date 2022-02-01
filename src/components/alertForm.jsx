@@ -8,6 +8,7 @@ import Input1 from "./input";
 import Input2 from './inout2';
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import backendUrl from '../constants/constants';
 
 const MySwal = withReactContent(Swal);
 const Toast = MySwal.mixin({
@@ -42,9 +43,9 @@ export default function alertForm(props) {
             email:values.email,
             phone:values.phone.toString()
         }
-        console.log(data)
+        // console.log(data)
         let token = JSON.parse(localStorage.getItem("token"))
-        const url = "http://localhost:8080/form/addFormData";
+        const url = `${backendUrl}/form/addFormData`;
         fetch(url,{
             method: "POST",
             headers: {
@@ -63,7 +64,7 @@ export default function alertForm(props) {
                 title: resData.message,
               })
             }else{
-              console.log(resData)
+              // console.log(resData)
             Toast.fire({
                 icon: "error",
                 title: data.errMessage

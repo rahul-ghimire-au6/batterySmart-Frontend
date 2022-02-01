@@ -9,6 +9,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import backendUrl from '../constants/constants.js';
 let callCount=0
 
 
@@ -36,7 +37,7 @@ export default function AlertData() {
 
   useEffect(()=>{
     // let token = JSON.parse(localStorage.getItem("token"))
-        const url = "http://localhost:8080/form/fetchFormData";
+        const url = `${backendUrl}/form/fetchFormData`;
         fetch(url,{
             method: "GET",
             headers: {
@@ -93,7 +94,7 @@ export default function AlertData() {
     if(e!==undefined)
       e.preventDefault()
         // let token = JSON.parse(localStorage.getItem("token"))
-        const url = "http://localhost:8080/form/fetchFormData";
+        const url = `${backendUrl}/form/fetchFormData`;
         fetch(url,{
             method: "GET",
             headers: {
@@ -132,7 +133,7 @@ export default function AlertData() {
         console.log('ok')
         let dataId = e.target.id;
         // let token = JSON.parse(localStorage.getItem("token"))
-        const url = `http://localhost:8080/form/deleteFormData/${dataId}`;
+        const url = `${backendUrl}/form/deleteFormData/${dataId}`;
         fetch(url,{
             method: "DELETE",
             headers: {

@@ -7,6 +7,7 @@ import Select from '@mui/material/Select';
 import SettingsIcon from '@mui/icons-material/Settings';
 import EventIcon from '@mui/icons-material/Event';
 import ReactApexChart from "react-apexcharts";
+import backendUrl from '../constants/constants';
 
 export default function ApexChart() {
 
@@ -49,7 +50,7 @@ export default function ApexChart() {
 
 useEffect(()=>{
 
-  const url = "http://localhost:8080/mockData/fetchApexMockData";
+  const url = `${backendUrl}/mockData/fetchApexMockData`;
   fetch(url,{
       method: "GET",
       headers: {
@@ -69,7 +70,7 @@ useEffect(()=>{
             data:resData.message[objectKeys[i]]
           })
         }
-        console.log(myData)
+        // console.log(myData)
         setSeries(myData)
 
       }

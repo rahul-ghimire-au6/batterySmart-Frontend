@@ -9,6 +9,7 @@ import withReactContent from "sweetalert2-react-content";
 import Button from '@mui/material/Button';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
+import backendUrl from './constants/constants.js'
 
 // let regx159 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
@@ -29,14 +30,14 @@ export default function Register(props) {
   const history = useHistory()
 
   const handleSubmit = async (values) => {
-    console.log(values)
+    // console.log(values)
 
       let data = {
         name:values.name,
         email:values.email,
         password:values.password,
       };
-      const url = "http://localhost:8080/user/register";
+      const url = `${backendUrl}/user/register`;
       fetch(url, {
         method: "POST",
         headers: {
@@ -48,7 +49,7 @@ export default function Register(props) {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data)
+          // console.log(data)
           if (data.status==='success') {
             //here is the animation
             Toast.fire({

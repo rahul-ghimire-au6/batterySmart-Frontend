@@ -29,11 +29,10 @@ a {
 .subMainBody-header-div {
   display: flex;
   margin-right: 2em;
-  margin-top: 0.3em;
 }
 .subMainBody-header {
   margin-left: 1.5em;
-  margin-top: 0.6em;
+  /* margin-top: 0.6em; */
 }
 .subMainBody-header h3 {
   font-family: "Roboto";

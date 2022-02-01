@@ -14,7 +14,7 @@ export default function ApexChart() {
   const [age, setAge] = useState('Select Day');
   const [series,setSeries] = useState([])   
   const [options] = useState({chart: {
-    height: 200,
+    height: '180vh',
     type: 'area'
   },
   dataLabels: {
@@ -122,7 +122,7 @@ useEffect(()=>{
     {/* start of apexChart Code here */}
     <div>
     <div id="chart">
-    <ReactApexChart options={options} series={series} type="area" height={190} />
+    <ReactApexChart options={options} series={series} type="area" height="180vh" />
     </div>
     </div>
     {/* end of apexChart code here */}
